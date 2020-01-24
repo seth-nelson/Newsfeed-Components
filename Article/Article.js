@@ -149,7 +149,7 @@ function componentConstructor(object) {
 
 
   function expandToggle() {
-    articleDiv.classlist.value.includes('article-open') ? articleDiv.classlist.remove('article-open') : articleDiv.classList.add('article-open');
+    articleDiv.classList.value.includes('article-open') ? articleDiv.classList.remove('article-open') : articleDiv.classList.add('article-open');
     console.log(articleDiv.classsList);
   }
 
@@ -162,7 +162,7 @@ function componentConstructor(object) {
 
 }
 
-const articles = document.querySelector('articles');
+const articles = document.querySelector('.articles');
 
 
 data.forEach((e) => {
