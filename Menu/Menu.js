@@ -45,7 +45,7 @@ function menuComponent (array) {
 
   menuDiv.appendChild(list);
 
-  manuDiv.classList.add('menu');
+  menuDiv.classList.add('menu');
 
 
 
@@ -60,11 +60,11 @@ function menuComponent (array) {
   function expandMenu() {
     console.log('Open Sesame!')
 
-    menuDiv.classList.value.includes('open-menu') ? meniDiv.classList.remove('open-menu') : menuDiv.classList.add('open-menu');
+    menuDiv.classList.value.includes('menu--open') ? menuDiv.classList.remove('menu--open') : menuDiv.classList.add('open-menu');
   }
 
 
-  menuButton.addEventListener('click, expandMenu');
+  menuButton.addEventListener('click', expandMenu);
 
   return menuDiv;
 }
