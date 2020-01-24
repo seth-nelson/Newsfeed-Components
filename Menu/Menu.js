@@ -64,9 +64,11 @@ function menuComponent (array) {
   }
 
 
-  
+  menuButton.addEventListener('click, expandMenu');
+
+  return menuDiv;
+}
 
 
   const body = document.querySelector('body');
     body.prepend(menuComponent(menuItems));
-  }
